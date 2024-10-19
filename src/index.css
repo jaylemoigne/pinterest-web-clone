@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon-styling {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.icon-styling:hover {
+  background-color: #f1f5f9;
+}
+
+input::placeholder {
+  color: #27272a;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #059669;
+}
+
+input {
+  border: 2px solid transparent;
+}
+
+.rotate-left{
+  transform:rotate(-12deg);
+}
+
+.rotate-right{
+  transform:rotate(12deg);
+}
+.images img {
+  transition: transform 0.3s ease;
+}
+
+/* Keep the original rotations and add the translation on hover */
+.filter-card:hover .images img:nth-child(1) {
+  transform: rotate(-22deg); /* Apply the original rotate with translateY */
+}
+
+.filter-card:hover .images img:nth-child(2) {
+  transform: translateY(-4px); /* No rotation for the second image */
+}
+
+.filter-card:hover .images img:nth-child(3) {
+  transform: rotate(22deg); /* Apply the original rotate with translateY */
+}
