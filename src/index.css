@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  overflow-x:hidden;
+}
 .icon-styling {
   font-size: 1.4rem;
   margin-bottom: 1.2rem;

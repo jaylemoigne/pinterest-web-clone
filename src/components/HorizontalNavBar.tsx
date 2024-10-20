@@ -98,25 +98,25 @@ const HorizontalNavBar = () => {
   ];
 
   return (
-    <div className="nav-wrapper fixed top-0 left-20 w-full pt-3 pl-6">
-      <div className="flex flex-col">
-        <div className="upper-wrap flex flex-row items-center">
+    <div className="nav-wrapper absolute top-0 left-20 w-full  bg-white z-10">
+      <div className="flex flex-col ">
+        <div className="upper-wrap flex flex-row items-center w-full fixed z-20 bg-white pt-3 pl-6">
           {/* Search bar */}
-          <div className="search relative w-[90%] flex-shrink">
+          <div className="search relative flex-shrink md:w-[60%] lg:w-[70%] xl:w-[85%]">
             <FiSearch className="search-icon absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500" />
             <input
               type="text"
               placeholder="Search"
-              className="p-[0.65rem] pl-10 rounded-lg w-full bg-gray-100 hover:bg-gray-200 "
+              className="p-[0.65rem] pl-10 rounded-lg w-full bg-gray-100 hover:bg-gray-200"
             />
             <MdCancel className="cancel-icon absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer" />
           </div>
 
           {/* Profile section */}
-          <div className="profile-container flex items-center  p-4">
+          <div className="profile-container flex items-center p-4 space-x-2">
             {/* Profile icon */}
             <div className="hover:bg-gray-100 rounded-lg">
-              <MdAccountCircle className="profile-icon text-5xl p-2 text-gray-600 cursor-pointer " />
+              <MdAccountCircle className="profile-icon text-5xl p-2 text-gray-600 cursor-pointer" />
             </div>
 
             {/* Dropdown icon */}
@@ -126,7 +126,7 @@ const HorizontalNavBar = () => {
           </div>
         </div>
 
-        <div className="lower-wrap w-full mt-4">
+        <div className="lower-wrap w-full mt-4 pt-3 pl-6 absolute top-20">
           <div className="filters flex flex-row gap-4 overflow-x-auto">
             {filters.map((filter, index) => (
               <div

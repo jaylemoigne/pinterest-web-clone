@@ -3,7 +3,7 @@ import NavbarIcons from "./NavbarIcons";
 
 const VerticalNavbar = () => {
   return (
-    <div className=" w-20 p-4 fixed h-screen border-r-2 border-gray-200">
+    <div className=" w-20 p-4 fixed h-screen border-r-2 border-gray-200 bg-white">
       <NavbarIcons />
     </div>
   );
