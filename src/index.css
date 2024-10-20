@@ -25,6 +25,7 @@ input::placeholder {
 input:focus {
   outline: none !important;
   border: 2px solid #059669;
+  background-color:#e5e7eb;
 }
 
 input {

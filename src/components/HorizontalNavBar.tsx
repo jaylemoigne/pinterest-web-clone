@@ -109,7 +109,9 @@ const HorizontalNavBar = () => {
               placeholder="Search"
               className="p-[0.65rem] pl-10 rounded-lg w-full bg-gray-100 hover:bg-gray-200"
             />
-            <MdCancel className="cancel-icon absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer" />
+            <div className="cancel-container hover:bg-gray-300 absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full">
+              <MdCancel className="cancel-icon  text-gray-600  cursor-pointer" />
+            </div>
           </div>
 
           {/* Profile section */}
